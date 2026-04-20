@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
+import csv
+import io
 import json
 import os
 import smtplib
+import sys
 import time
 import urllib.request
 from datetime import datetime, timezone
+from email import encoders
+from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -183,6 +188,77 @@ def send_email(changes, gmail_user, gmail_password, recipient):
     print(f"  Email sent to {recipient}")
 
 
+def build_csv(prices):
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["Product Name", "Variant", "Price (CAD)", "Availability", "Link"])
+    for item in sorted(prices.values(), key=lambda x: x["title"]):
+        variant = item["variant"] if item["variant"] != "Default Title" else ""
+        availability = "In Stock" if item["available"] else "Out of Stock"
+        writer.writerow([item["title"], variant, item["price"], availability, item["url"]])
+    return output.getvalue().encode("utf-8")
+
+
+def build_digest_html(prices):
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    grouped = {}
+    for item in prices.values():
+        grouped.setdefault(item["title"], []).append(item)
+
+    rows = ""
+    for title in sorted(grouped.keys()):
+        for v in grouped[title]:
+            variant = v["variant"] if v["variant"] != "Default Title" else ""
+            avail_color = "#155724" if v["available"] else "#721c24"
+            avail = "In Stock" if v["available"] else "Out of Stock"
+            rows += f"""<tr>
+              <td><a href="{v['url']}" target="_blank">{title}</a></td>
+              <td>{variant}</td>
+              <td style="font-weight:bold">${v['price']} CAD</td>
+              <td style="color:{avail_color}">{avail}</td>
+            </tr>"""
+
+    return f"""<html><body style="font-family:Arial,sans-serif;max-width:1000px;margin:auto">
+    <h2 style="color:#333">&#128203; YumeCards Daily Price List</h2>
+    <p style="color:#666">{now} &mdash; <b>{len(grouped)} products</b>, <b>{len(prices)} variants</b><br>
+    The full price list is attached as an Excel-compatible CSV file.</p>
+    <table border="1" cellpadding="8" style="border-collapse:collapse;width:100%;font-size:0.9em">
+      <tr style="background:#222;color:white">
+        <th>Product Name</th><th>Variant</th><th>Price (CAD)</th><th>Availability</th>
+      </tr>
+      {rows}
+    </table>
+    <hr><small style="color:#999">Sent by PokéDash Price Monitor &mdash; daily digest</small>
+    </body></html>"""
+
+
+def send_daily_digest(prices, gmail_user, gmail_password, recipient):
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    grouped_count = len({v["title"] for v in prices.values()})
+
+    msg = MIMEMultipart("mixed")
+    msg["Subject"] = f"[PokéDash] YumeCards Daily Price List — {today} ({grouped_count} products)"
+    msg["From"] = gmail_user
+    msg["To"] = recipient
+
+    msg.attach(MIMEText(build_digest_html(prices), "html"))
+
+    csv_data = build_csv(prices)
+    attachment = MIMEBase("application", "octet-stream")
+    attachment.set_payload(csv_data)
+    encoders.encode_base64(attachment)
+    attachment.add_header(
+        "Content-Disposition",
+        f"attachment; filename=yumecards_prices_{today}.csv"
+    )
+    msg.attach(attachment)
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        smtp.login(gmail_user, gmail_password)
+        smtp.sendmail(gmail_user, recipient, msg.as_string())
+    print(f"  Daily digest sent to {recipient}")
+
+
 def generate_dashboard(prices, history):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     recent = list(reversed(history[-200:]))
@@ -337,5 +413,31 @@ def main():
     print("Done.")
 
 
+def daily_digest():
+    print(f"[{datetime.now(timezone.utc).isoformat()}] Sending daily digest...")
+
+    gmail_user = os.environ.get("GMAIL_USER", "")
+    gmail_password = os.environ.get("GMAIL_PASSWORD", "")
+    recipient = os.environ.get("ALERT_EMAIL", "pokedash.tcg@gmail.com")
+
+    prices = load_json(PRICES_FILE, {})
+    if not prices:
+        print("  No price data yet — run monitor first.")
+        return
+
+    if gmail_user and gmail_password:
+        try:
+            send_daily_digest(prices, gmail_user, gmail_password, recipient)
+        except Exception as e:
+            print(f"  Email error: {e}")
+    else:
+        print("  Gmail credentials not configured.")
+
+    print("Done.")
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "--digest":
+        daily_digest()
+    else:
+        main()
