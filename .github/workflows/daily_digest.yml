@@ -1,0 +1,28 @@
+name: Daily Price Digest
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # runs every day at 9:00 AM Eastern time
+  workflow_dispatch:         # allows manual run from GitHub website
+
+permissions:
+  contents: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send daily digest
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          ALERT_EMAIL: pokedash.tcg@gmail.com
+        run: python monitor.py --digest
