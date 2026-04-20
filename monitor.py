@@ -14,6 +14,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 STORE_URL = "https://www.yumecards.ca"
+COLLECTION_PATH = "/collections/japanese-box"
 PRICES_FILE = "data/prices.json"
 HISTORY_FILE = "data/history.json"
 DASHBOARD_FILE = "docs/index.html"
@@ -24,7 +25,7 @@ def fetch_all_products(base_url):
     products = []
     page = 1
     while True:
-        url = f"{base_url}/products.json?limit=250&page={page}"
+        url = f"{base_url}{COLLECTION_PATH}/products.json?limit=250&page={page}"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=30) as resp:
