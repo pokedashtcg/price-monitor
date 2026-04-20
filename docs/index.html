@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokéDash Price Monitor</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f2f5; color: #333; }
+  h1 { margin-bottom: 4px; }
+  .updated { color: #888; font-size: 0.85em; margin-bottom: 20px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+  .stat { background: white; padding: 16px 24px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); min-width: 160px; }
+  .stat h3 { margin: 0; font-size: 2.2em; color: #e44; }
+  .stat p { margin: 4px 0 0; color: #666; font-size: 0.88em; }
+  .card { background: white; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92em; }
+  th { background: #222; color: white; padding: 10px 12px; text-align: left; white-space: nowrap; }
+  td { padding: 8px 12px; border-top: 1px solid #eee; }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .legend { font-size: 0.82em; color: #888; margin-top: 10px; }
+  .legend span { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<h1>&#127921; PokéDash &mdash; YumeCards Price Monitor</h1>
+<p class="updated">Last checked: <b>2026-04-20 22:05 UTC</b> &nbsp;|&nbsp; Tracking <b>104,639</b> product variants</p>
+
+<div class="stats">
+  <div class="stat"><h3>0</h3><p>Total price changes logged</p></div>
+  <div class="stat"><h3>0</h3><p>Changes (last 7 days)</p></div>
+  <div class="stat"><h3>104,639</h3><p>Variants tracked</p></div>
+</div>
+
+<div class="card">
+  <table>
+    <tr>
+      <th>Time (UTC)</th>
+      <th>Product</th>
+      <th>Variant</th>
+      <th>Old Price</th>
+      <th>New Price</th>
+      <th>Change</th>
+    </tr>
+    <tr><td colspan="6" style="text-align:center;padding:30px;color:#aaa">No changes detected yet. Check back after the first monitor run.</td></tr>
+  </table>
+</div>
+<div class="legend">
+  <span style="background:#d4edda"></span>Price dropped &nbsp;
+  <span style="background:#f8d7da"></span>Price increased &nbsp;
+  <span style="background:#fff3cd"></span>New product &nbsp;
+  <span style="background:#e2e3e5"></span>Removed
+</div>
+</body>
+</html>
