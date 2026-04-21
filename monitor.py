@@ -14,17 +14,18 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 STORE_URL = "https://www.yumecards.ca"
+COLLECTION_PATHS = ["/collections/japanese-box", "/collections/one-piece"]
 PRICES_FILE = "data/prices.json"
 HISTORY_FILE = "data/history.json"
 DASHBOARD_FILE = "docs/index.html"
 MAX_HISTORY = 1000
 
 
-def fetch_all_products(base_url):
+def fetch_all_products(base_url, collection_path):
     products = []
     page = 1
     while True:
-        url = f"{base_url}/products.json?limit=250&page={page}"
+        url = f"{base_url}{collection_path}/products.json?limit=250&page={page}"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=30) as resp:
@@ -199,40 +200,55 @@ def build_csv(prices):
     return output.getvalue().encode("utf-8")
 
 
-def build_digest_html(prices):
+def build_digest_html(prices, history):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     grouped = {}
     for item in prices.values():
         grouped.setdefault(item["title"], []).append(item)
 
-    rows = ""
-    for title in sorted(grouped.keys()):
-        for v in grouped[title]:
-            variant = v["variant"] if v["variant"] != "Default Title" else ""
-            avail_color = "#155724" if v["available"] else "#721c24"
-            avail = "In Stock" if v["available"] else "Out of Stock"
-            rows += f"""<tr>
-              <td><a href="{v['url']}" target="_blank">{title}</a></td>
-              <td>{variant}</td>
-              <td style="font-weight:bold">${v['price']} CAD</td>
-              <td style="color:{avail_color}">{avail}</td>
+    # Price changes in the last 24 hours
+    from datetime import timedelta
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=24)).isoformat()
+    recent_changes = [
+        c for c in history
+        if c["type"] == "price_change" and c["timestamp"] >= cutoff
+    ]
+
+    changes_section = ""
+    if recent_changes:
+        change_rows = ""
+        for c in recent_changes:
+            color = "#d4edda" if c["direction"] == "DOWN" else "#f8d7da"
+            arrow = "&#9660;" if c["direction"] == "DOWN" else "&#9650;"
+            change_rows += f"""<tr style="background:{color}">
+              <td><a href="{c['url']}" target="_blank">{c['title']}</a></td>
+              <td>{c['variant']}</td>
+              <td>${c['old_price']} CAD</td>
+              <td><b>${c['new_price']} CAD {arrow}</b></td>
+              <td>{c['direction']} ${c['diff']} ({c['pct']}%)</td>
             </tr>"""
+        changes_section = f"""
+        <h3 style="color:#c0392b">&#128680; Price Changes in the Last 24 Hours ({len(recent_changes)})</h3>
+        <table border="1" cellpadding="8" style="border-collapse:collapse;width:100%;font-size:0.9em;margin-bottom:24px">
+          <tr style="background:#c0392b;color:white">
+            <th>Product</th><th>Variant</th><th>Old Price</th><th>New Price</th><th>Change</th>
+          </tr>
+          {change_rows}
+        </table>"""
+    else:
+        changes_section = '<p style="color:#155724;background:#d4edda;padding:10px;border-radius:4px">&#10003; No price changes in the last 24 hours.</p>'
 
     return f"""<html><body style="font-family:Arial,sans-serif;max-width:1000px;margin:auto">
     <h2 style="color:#333">&#128203; YumeCards Daily Price List</h2>
     <p style="color:#666">{now} &mdash; <b>{len(grouped)} products</b>, <b>{len(prices)} variants</b><br>
     The full price list is attached as an Excel-compatible CSV file.</p>
-    <table border="1" cellpadding="8" style="border-collapse:collapse;width:100%;font-size:0.9em">
-      <tr style="background:#222;color:white">
-        <th>Product Name</th><th>Variant</th><th>Price (CAD)</th><th>Availability</th>
-      </tr>
-      {rows}
-    </table>
+    {changes_section}
+    <p style="color:#555">&#128206; Open the attached <b>CSV file</b> to see all current prices in Excel.</p>
     <hr><small style="color:#999">Sent by PokéDash Price Monitor &mdash; daily digest</small>
     </body></html>"""
 
 
-def send_daily_digest(prices, gmail_user, gmail_password, recipient):
+def send_daily_digest(prices, history, gmail_user, gmail_password, recipient):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     grouped_count = len({v["title"] for v in prices.values()})
 
@@ -241,7 +257,7 @@ def send_daily_digest(prices, gmail_user, gmail_password, recipient):
     msg["From"] = gmail_user
     msg["To"] = recipient
 
-    msg.attach(MIMEText(build_digest_html(prices), "html"))
+    msg.attach(MIMEText(build_digest_html(prices, history), "html"))
 
     csv_data = build_csv(prices)
     attachment = MIMEBase("application", "octet-stream")
@@ -369,8 +385,11 @@ def main():
     gmail_password = os.environ.get("GMAIL_PASSWORD", "")
     recipient = os.environ.get("ALERT_EMAIL", "pokedash.tcg@gmail.com")
 
-    print(f"Fetching all products from {STORE_URL}...")
-    products = fetch_all_products(STORE_URL)
+    print(f"Fetching products from {STORE_URL}...")
+    products = []
+    for path in COLLECTION_PATHS:
+        print(f"  Collection: {path}")
+        products.extend(fetch_all_products(STORE_URL, path))
     print(f"  Total products: {len(products)}")
 
     new_prices = extract_prices(products)
@@ -421,13 +440,14 @@ def daily_digest():
     recipient = os.environ.get("ALERT_EMAIL", "pokedash.tcg@gmail.com")
 
     prices = load_json(PRICES_FILE, {})
+    history = load_json(HISTORY_FILE, [])
     if not prices:
         print("  No price data yet — run monitor first.")
         return
 
     if gmail_user and gmail_password:
         try:
-            send_daily_digest(prices, gmail_user, gmail_password, recipient)
+            send_daily_digest(prices, history, gmail_user, gmail_password, recipient)
         except Exception as e:
             print(f"  Email error: {e}")
     else:
