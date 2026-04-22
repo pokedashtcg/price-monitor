@@ -2,18 +2,6 @@
   {
     "type": "removed",
     "direction": "REMOVED",
-    "title": "Surfing Pikachu VMAX (022/028) [JP S8a 25th Anniversary Collection] Holofoil",
-    "variant": "Damaged",
-    "old_price": "3.14",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/surfing-pikachu-vmax-022-028-s8a-25th-anniversary-collection-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
     "title": "Pikachu - 073/071 (073/071) [JP S10a Dark Phantasma] Holofoil",
     "variant": "Near Mint",
     "old_price": "46.55",
@@ -11998,5 +11986,17 @@
     "pct": "N/A",
     "url": "https://www.yumecards.ca/products/pokemon-stellar-crown-booster-box",
     "timestamp": "2026-04-21T07:56:45.206611+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Ninja Spinner Booster Box M4",
+    "variant": "Default Title",
+    "old_price": "119.99",
+    "new_price": "139.99",
+    "diff": "20.00",
+    "pct": "16.7",
+    "url": "https://www.yumecards.ca/products/pokemon-ninja-spinner-booster-box-m4",
+    "timestamp": "2026-04-22T06:24:00.338539+00:00"
   }
 ]
