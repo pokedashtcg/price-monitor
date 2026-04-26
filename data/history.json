@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Moltres & Zapdos & Articuno GX - 035/054 (035/054) [JP SM10b Sky Legend] Holofoil",
-    "variant": "Near Mint",
-    "old_price": "25.14",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/moltres-zapdos-articuno-gx-035-054-035-054-sm10b-sky-legend-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Moltres & Zapdos & Articuno GX - 035/054 (035/054) [JP SM10b Sky Legend] Holofoil",
     "variant": "Lightly Played",
     "old_price": "20.11",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "11.8",
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-06-twin-champions",
     "timestamp": "2026-04-24T06:30:13.706111+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Mega Dream ex Booster Box M2a",
+    "variant": "Default Title",
+    "old_price": "159.99",
+    "new_price": "169.99",
+    "diff": "10.00",
+    "pct": "6.3",
+    "url": "https://www.yumecards.ca/products/pokemon-mega-dream-ex-booster-box-m2a",
+    "timestamp": "2026-04-26T06:30:41.330419+00:00"
   }
 ]
