@@ -3,30 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Blastoise EX (073/072) [JP BREAK Starter Pack] Holofoil",
-    "variant": "Near Mint",
-    "old_price": "36.99",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/blastoise-ex-073-072-break-starter-pack-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Blastoise EX (073/072) [JP BREAK Starter Pack] Holofoil",
-    "variant": "Lightly Played",
-    "old_price": "29.59",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/blastoise-ex-073-072-break-starter-pack-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Blastoise EX (073/072) [JP BREAK Starter Pack] Holofoil",
     "variant": "Moderately Played",
     "old_price": "22.19",
     "new_price": null,
@@ -11998,5 +11974,29 @@
     "pct": "9.1",
     "url": "https://www.yumecards.ca/products/pokemon-violet-ex-booster-box-sv1v",
     "timestamp": "2026-04-28T07:57:22.131062+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Mega Symphonia Booster Box M1S",
+    "variant": "Default Title",
+    "old_price": "119.99",
+    "new_price": "133.99",
+    "diff": "14.00",
+    "pct": "11.7",
+    "url": "https://www.yumecards.ca/products/pokemon-mega-symphonia-booster-box-m1s",
+    "timestamp": "2026-04-29T07:51:34.198608+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Violet ex Booster Box sv1V",
+    "variant": "Default Title",
+    "old_price": "119.99",
+    "new_price": "129.99",
+    "diff": "10.00",
+    "pct": "8.3",
+    "url": "https://www.yumecards.ca/products/pokemon-violet-ex-booster-box-sv1v",
+    "timestamp": "2026-04-29T07:51:34.198608+00:00"
   }
 ]

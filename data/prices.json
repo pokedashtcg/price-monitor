@@ -37,8 +37,8 @@
   "pokemon-mega-symphonia-booster-box-m1s::50859088380203": {
     "title": "Pokemon Mega Symphonia Booster Box M1S",
     "variant": "Default Title",
-    "price": "119.99",
-    "available": false,
+    "price": "133.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-mega-symphonia-booster-box-m1s"
   },
   "pokemon-pokemon-center-fukuoka-special-box::50880588611883": {
@@ -233,8 +233,8 @@
   "pokemon-violet-ex-booster-box-sv1v::49711473262891": {
     "title": "Pokemon Violet ex Booster Box sv1V",
     "variant": "Default Title",
-    "price": "119.99",
-    "available": false,
+    "price": "129.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-violet-ex-booster-box-sv1v"
   },
   "pokemon-vstar-universe-booster-box-s12a-1::49717762588971": {
@@ -367,7 +367,7 @@
     "title": "One Piece JP \u2022 OP-09 The Four Emperors",
     "variant": "Default Title",
     "price": "179.99",
-    "available": true,
+    "available": false,
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-09-the-four-emperors"
   },
   "one-piece-jp-op-08-two-legends::51061962735915": {
