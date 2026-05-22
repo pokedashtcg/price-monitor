@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Skeledirge ex - 032/190 (032/190) [JP SV4a Shiny Treasure ex] Holofoil",
-    "variant": "Near Mint",
-    "old_price": "1.99",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/skeledirge-ex-032-190-032-190-sv4a-shiny-treasure-ex-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Skeledirge ex - 032/190 (032/190) [JP SV4a Shiny Treasure ex] Holofoil",
     "variant": "Lightly Played",
     "old_price": "1.59",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "N/A",
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-01-romance-dawn",
     "timestamp": "2026-05-16T20:32:16.108837+00:00"
+  },
+  {
+    "type": "new_product",
+    "direction": "NEW",
+    "title": "Pokemon Abyss Eye Booster Box M5 (Preorder ships 27th-1st)",
+    "variant": "Default Title",
+    "old_price": null,
+    "new_price": "133.99",
+    "diff": "133.99",
+    "pct": "N/A",
+    "url": "https://www.yumecards.ca/products/pokemon-abyss-eye-booster-box-m5-preorder-ships-27th-1st",
+    "timestamp": "2026-05-22T02:50:47.134048+00:00"
   }
 ]
