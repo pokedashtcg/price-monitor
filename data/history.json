@@ -3,42 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Vulpix  [JP Expansion Pack]",
-    "variant": "Lightly Played",
-    "old_price": "1.96",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/vulpix-expansion-pack",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Vulpix  [JP Expansion Pack]",
-    "variant": "Moderately Played",
-    "old_price": "1.47",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/vulpix-expansion-pack",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Vulpix  [JP Expansion Pack]",
-    "variant": "Heavily Played",
-    "old_price": "1.23",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/vulpix-expansion-pack",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Vulpix  [JP Expansion Pack]",
     "variant": "Damaged",
     "old_price": "0.74",
     "new_price": null,
@@ -11998,5 +11962,41 @@
     "pct": "8.6",
     "url": "https://www.yumecards.ca/products/pokemon-ninja-spinner-booster-box-m4",
     "timestamp": "2026-06-05T09:37:56.366596+00:00"
+  },
+  {
+    "type": "new_product",
+    "direction": "NEW",
+    "title": "Pokemon 30th Celebration Booster Box M6a",
+    "variant": "Default Title",
+    "old_price": null,
+    "new_price": "1.00",
+    "diff": "1.00",
+    "pct": "N/A",
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-booster-box-m6a",
+    "timestamp": "2026-06-06T19:13:52.416860+00:00"
+  },
+  {
+    "type": "new_product",
+    "direction": "NEW",
+    "title": "Pokemon 30th Celebration Futuristic Box",
+    "variant": "Default Title",
+    "old_price": null,
+    "new_price": "1.00",
+    "diff": "1.00",
+    "pct": "N/A",
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-futuristic-box",
+    "timestamp": "2026-06-06T19:13:52.416860+00:00"
+  },
+  {
+    "type": "new_product",
+    "direction": "NEW",
+    "title": "Pokemon 30th Celebration Premium Deck Set Espeon & Umbreon",
+    "variant": "Default Title",
+    "old_price": null,
+    "new_price": "1.00",
+    "diff": "1.00",
+    "pct": "N/A",
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-premium-deck-set-espeon-umbreon",
+    "timestamp": "2026-06-06T19:13:52.416860+00:00"
   }
 ]

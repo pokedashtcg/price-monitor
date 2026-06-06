@@ -150,7 +150,7 @@
     "title": "Pokemon Crimson Haze Booster Box sv5a",
     "variant": "Default Title",
     "price": "179.99",
-    "available": true,
+    "available": false,
     "url": "https://www.yumecards.ca/products/pokemon-crimson-haze-booster-box-sv5a"
   },
   "pokemon-wild-force-booster-box-sv5k::49711472673067": {
@@ -278,6 +278,27 @@
     "price": "189.99",
     "available": false,
     "url": "https://www.yumecards.ca/products/pokemon-shiny-star-v-booster-box-s4a"
+  },
+  "pokemon-30th-celebration-booster-box-m6a::53650375737643": {
+    "title": "Pokemon 30th Celebration Booster Box M6a",
+    "variant": "Default Title",
+    "price": "1.00",
+    "available": false,
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-booster-box-m6a"
+  },
+  "pokemon-30th-celebration-futuristic-box::53650379276587": {
+    "title": "Pokemon 30th Celebration Futuristic Box",
+    "variant": "Default Title",
+    "price": "1.00",
+    "available": false,
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-futuristic-box"
+  },
+  "pokemon-30th-celebration-premium-deck-set-espeon-umbreon::53650381996331": {
+    "title": "Pokemon 30th Celebration Premium Deck Set Espeon & Umbreon",
+    "variant": "Default Title",
+    "price": "1.00",
+    "available": false,
+    "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-premium-deck-set-espeon-umbreon"
   },
   "one-piece-monkey-d-luffy-st29-001-magazine-021-japanese-card-only::53295674360107": {
     "title": "PREORDER SEP - One Piece Monkey D Luffy ST29-001 Magazine 021 Japanese (CARD ONLY)",
