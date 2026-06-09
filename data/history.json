@@ -2,18 +2,6 @@
   {
     "type": "removed",
     "direction": "REMOVED",
-    "title": "Vulpix  [JP Expansion Pack]",
-    "variant": "Damaged",
-    "old_price": "0.74",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/vulpix-expansion-pack",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
     "title": "Charmander - 052/ADV-P (052/ADV-P) [JP ADVP Promotional cards]",
     "variant": "Near Mint",
     "old_price": "0.00",
@@ -11998,5 +11986,17 @@
     "pct": "N/A",
     "url": "https://www.yumecards.ca/products/pokemon-30th-celebration-premium-deck-set-espeon-umbreon",
     "timestamp": "2026-06-06T19:13:52.416860+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "DOWN",
+    "title": "Pokemon Mega Dream ex Booster Box M2a",
+    "variant": "Default Title",
+    "old_price": "179.99",
+    "new_price": "159.99",
+    "diff": "20.00",
+    "pct": "11.1",
+    "url": "https://www.yumecards.ca/products/pokemon-mega-dream-ex-booster-box-m2a",
+    "timestamp": "2026-06-09T02:40:39.015519+00:00"
   }
 ]
