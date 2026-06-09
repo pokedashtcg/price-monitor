@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Charmander - 052/ADV-P (052/ADV-P) [JP ADVP Promotional cards]",
-    "variant": "Near Mint",
-    "old_price": "0.00",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/charmander-052-adv-p-052-adv-p-advp-promotional-cards",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Charmander - 052/ADV-P (052/ADV-P) [JP ADVP Promotional cards]",
     "variant": "Lightly Played",
     "old_price": "0.00",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "11.1",
     "url": "https://www.yumecards.ca/products/pokemon-mega-dream-ex-booster-box-m2a",
     "timestamp": "2026-06-09T02:40:39.015519+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "PREORDER SEP - One Piece Monkey D Luffy ST29-001 Magazine 021 Japanese (CARD ONLY)",
+    "variant": "Default Title",
+    "old_price": "39.99",
+    "new_price": "44.99",
+    "diff": "5.00",
+    "pct": "12.5",
+    "url": "https://www.yumecards.ca/products/one-piece-monkey-d-luffy-st29-001-magazine-021-japanese-card-only",
+    "timestamp": "2026-06-09T20:02:18.944079+00:00"
   }
 ]
