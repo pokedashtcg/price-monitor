@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Charmander - 052/ADV-P (052/ADV-P) [JP ADVP Promotional cards]",
-    "variant": "Lightly Played",
-    "old_price": "0.00",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/charmander-052-adv-p-052-adv-p-advp-promotional-cards",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Charmander - 052/ADV-P (052/ADV-P) [JP ADVP Promotional cards]",
     "variant": "Moderately Played",
     "old_price": "10.99",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "12.5",
     "url": "https://www.yumecards.ca/products/one-piece-monkey-d-luffy-st29-001-magazine-021-japanese-card-only",
     "timestamp": "2026-06-09T20:02:18.944079+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "DOWN",
+    "title": "Pokemon Nihil Zero Booster Box M3",
+    "variant": "Default Title",
+    "old_price": "100.99",
+    "new_price": "94.99",
+    "diff": "6.00",
+    "pct": "5.9",
+    "url": "https://www.yumecards.ca/products/pokemon-nihil-zero-booster-box-m3",
+    "timestamp": "2026-06-12T03:27:09.195327+00:00"
   }
 ]
