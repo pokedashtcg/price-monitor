@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Ditto Prism Star (043/060) [JP SM7a Thunderclap Spark] Holofoil",
-    "variant": "Moderately Played",
-    "old_price": "7.97",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/ditto-prism-star-043-060-sm7a-thunderclap-spark-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Ditto Prism Star (043/060) [JP SM7a Thunderclap Spark] Holofoil",
     "variant": "Heavily Played",
     "old_price": "6.64",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "N/A",
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-01-romance-dawn",
     "timestamp": "2026-06-16T11:02:11.610721+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "PREORDER SEP - One Piece Monkey D Luffy ST29-001 Magazine 021 Japanese (CARD ONLY)",
+    "variant": "Default Title",
+    "old_price": "44.99",
+    "new_price": "49.99",
+    "diff": "5.00",
+    "pct": "11.1",
+    "url": "https://www.yumecards.ca/products/one-piece-monkey-d-luffy-st29-001-magazine-021-japanese-card-only",
+    "timestamp": "2026-06-18T20:18:07.290553+00:00"
   }
 ]
