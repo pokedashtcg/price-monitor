@@ -37,14 +37,14 @@
   "pokemon-mega-brave-booster-box-m1l::50859057381675": {
     "title": "Pokemon Mega Brave Booster Box M1L",
     "variant": "Default Title",
-    "price": "149.99",
-    "available": false,
+    "price": "136.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-mega-brave-booster-box-m1l"
   },
   "pokemon-mega-symphonia-booster-box-m1s::50859088380203": {
     "title": "Pokemon Mega Symphonia Booster Box M1S",
     "variant": "Default Title",
-    "price": "133.99",
+    "price": "119.99",
     "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-mega-symphonia-booster-box-m1s"
   },
@@ -72,8 +72,8 @@
   "pokemon-black-bolt-booster-box-sv11b::50521483378987": {
     "title": "Pokemon Black Bolt Booster Box sv11B",
     "variant": "Default Title",
-    "price": "189.99",
-    "available": false,
+    "price": "249.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-black-bolt-booster-box-sv11b"
   },
   "pokemon-white-flare-booster-box-sv11w::50521483936043": {
@@ -128,15 +128,15 @@
   "pokemon-stellar-miracle-booster-box-sv7::49711471886635": {
     "title": "Pokemon Stellar Miracle Booster Box sv7",
     "variant": "Default Title",
-    "price": "119.99",
-    "available": false,
+    "price": "129.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-stellar-miracle-booster-box-sv7"
   },
   "pokemon-night-wanderer-booster-box-sv6a::49711472541995": {
     "title": "Pokemon Night Wanderer Booster Box sv6a",
     "variant": "Default Title",
-    "price": "118.99",
-    "available": false,
+    "price": "134.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-night-wanderer-booster-box-sv6a"
   },
   "pokemon-mask-of-change-booster-box-sv6::49711472574763": {
@@ -192,14 +192,14 @@
     "title": "Pokemon Raging Surf Booster Box sv3a",
     "variant": "Default Title",
     "price": "149.99",
-    "available": false,
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-raging-surf-booster-box-sv3a"
   },
   "pokemon-ruler-of-the-black-flame-booster-box-sv3::49711473000747": {
     "title": "Pokemon Ruler of the Black Flame Booster Box sv3",
     "variant": "Default Title",
-    "price": "189.99",
-    "available": false,
+    "price": "239.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-ruler-of-the-black-flame-booster-box-sv3"
   },
   "pokemon-151-booster-box-sv2a::49711473066283": {
@@ -213,35 +213,35 @@
     "title": "Pokemon Snow Hazard Booster Box sv2P",
     "variant": "Default Title",
     "price": "129.99",
-    "available": false,
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-snow-hazard-booster-box-sv2p"
   },
   "pokemon-clay-burst-booster-box-sv2d::49711473099051": {
     "title": "Pokemon Clay Burst Booster Box sv2D",
     "variant": "Default Title",
-    "price": "134.99",
-    "available": false,
+    "price": "149.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-clay-burst-booster-box-sv2d"
   },
   "pokemon-triplet-beat-booster-box-sv1a::49711473197355": {
     "title": "Pokemon Triplet Beat Booster Box sv1a",
     "variant": "Default Title",
-    "price": "189.99",
-    "available": false,
+    "price": "209.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-triplet-beat-booster-box-sv1a"
   },
   "pokemon-scarlet-ex-booster-box-sv1s::49711473230123": {
     "title": "Pokemon Scarlet ex Booster Box sv1S",
     "variant": "Default Title",
-    "price": "139.99",
-    "available": false,
+    "price": "159.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-scarlet-ex-booster-box-sv1s"
   },
   "pokemon-violet-ex-booster-box-sv1v::49711473262891": {
     "title": "Pokemon Violet ex Booster Box sv1V",
     "variant": "Default Title",
     "price": "129.99",
-    "available": false,
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-violet-ex-booster-box-sv1v"
   },
   "pokemon-vstar-universe-booster-box-s12a-1::49717762588971": {
@@ -315,17 +315,17 @@
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-17-the-worlds-strongest-warriors-preorder-august"
   },
   "one-piece-jp-op-16-the-time-of-battle::53125048107307": {
-    "title": "One Piece JP \u2022 OP-16 The Time of Battle (Preorder June 6-11th)",
+    "title": "One Piece JP \u2022 OP-16 The Time of Battle",
     "variant": "Default Title",
-    "price": "89.99",
-    "available": false,
+    "price": "172.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-16-the-time-of-battle"
   },
   "one-piece-jp-op-15-adventure-on-the-island-of-the-gods::51989732753707": {
     "title": "One Piece JP \u2022 OP-15 Adventure on The Island of the Gods",
     "variant": "Default Title",
-    "price": "129.99",
-    "available": false,
+    "price": "159.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-15-adventure-on-the-island-of-the-gods"
   },
   "one-piece-jp-eb-04-egghead-crisis::51701160116523": {
@@ -345,8 +345,8 @@
   "one-piece-jp-eb-03-heroines-edition::51314483265835": {
     "title": "One Piece JP \u2022 EB-03 Heroines Edition",
     "variant": "Default Title",
-    "price": "159.99",
-    "available": false,
+    "price": "199.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/one-piece-jp-eb-03-heroines-edition"
   },
   "one-piece-jp-op-13-inherited-will::51174482280747": {
@@ -359,7 +359,7 @@
   "one-piece-jp-prb-02-the-best::51334409060651": {
     "title": "One Piece JP \u2022 PRB-02 The Best",
     "variant": "Default Title",
-    "price": "72.99",
+    "price": "107.99",
     "available": false,
     "url": "https://www.yumecards.ca/products/one-piece-jp-prb-02-the-best"
   },
@@ -408,8 +408,8 @@
   "one-piece-jp-prb-01-the-best::51334408667435": {
     "title": "One Piece JP \u2022 PRB-01 The Best",
     "variant": "Default Title",
-    "price": "179.99",
-    "available": false,
+    "price": "219.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/one-piece-jp-prb-01-the-best"
   },
   "one-piece-jp-op-07-500-years-into-the-future::51061975253291": {
