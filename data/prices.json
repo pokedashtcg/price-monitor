@@ -1,4 +1,11 @@
 {
+  "no-shrink-pokemon-mega-dream-ex-booster-box-m2a::53918617043243": {
+    "title": "(NO SHRINK) Pokemon Mega Dream ex Booster Box M2a",
+    "variant": "Default Title",
+    "price": "145.99",
+    "available": true,
+    "url": "https://www.yumecards.ca/products/no-shrink-pokemon-mega-dream-ex-booster-box-m2a"
+  },
   "pokemon-abyss-eye-booster-box-m5-preorder-ships-27th-1st::53606462390571": {
     "title": "Pokemon Abyss Eye Booster Box M5",
     "variant": "Default Title",
@@ -16,8 +23,8 @@
   "pokemon-nihil-zero-booster-box-m3::51953372070187": {
     "title": "Pokemon Nihil Zero Booster Box M3",
     "variant": "Default Title",
-    "price": "94.99",
-    "available": false,
+    "price": "95.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-nihil-zero-booster-box-m3"
   },
   "pokemon-mega-dream-ex-booster-box-m2a::51571631522091": {
@@ -38,7 +45,7 @@
     "title": "Pokemon Mega Brave Booster Box M1L",
     "variant": "Default Title",
     "price": "136.99",
-    "available": true,
+    "available": false,
     "url": "https://www.yumecards.ca/products/pokemon-mega-brave-booster-box-m1l"
   },
   "pokemon-mega-symphonia-booster-box-m1s::50859088380203": {
@@ -100,8 +107,8 @@
   "pokemon-battle-partners-booster-box-sv9-pre-order::50144077447467": {
     "title": "Pokemon Battle Partners Booster Box sv9",
     "variant": "Default Title",
-    "price": "109.99",
-    "available": false,
+    "price": "119.99",
+    "available": true,
     "url": "https://www.yumecards.ca/products/pokemon-battle-partners-booster-box-sv9-pre-order"
   },
   "pokemon-terastal-festival-ex-booster-box-sv8a::49867017453867": {
@@ -248,7 +255,7 @@
     "title": "Pokemon VSTAR Universe Booster Box s12a",
     "variant": "Default Title",
     "price": "339.99",
-    "available": true,
+    "available": false,
     "url": "https://www.yumecards.ca/products/pokemon-vstar-universe-booster-box-s12a-1"
   },
   "pokemon-paradigm-trigger-booster-box-s12::49717785362731": {

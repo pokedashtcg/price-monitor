@@ -2,42 +2,6 @@
   {
     "type": "removed",
     "direction": "REMOVED",
-    "title": "Igglybuff (061/083) [JP Undone Seal] 1st Edition",
-    "variant": "Moderately Played",
-    "old_price": "3.61",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/igglybuff-061-083-undone-seal-1st-edition",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Igglybuff (061/083) [JP Undone Seal] 1st Edition",
-    "variant": "Heavily Played",
-    "old_price": "3.05",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/igglybuff-061-083-undone-seal-1st-edition",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Igglybuff (061/083) [JP Undone Seal] 1st Edition",
-    "variant": "Damaged",
-    "old_price": "1.83",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/igglybuff-061-083-undone-seal-1st-edition",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
     "title": "Dragonite EX - 134/SV-P (134/SV-P) [JP SVP Promotional Cards] Holofoil",
     "variant": "Near Mint",
     "old_price": "28.76",
@@ -11998,5 +11962,41 @@
     "pct": "22.2",
     "url": "https://www.yumecards.ca/products/one-piece-jp-prb-01-the-best",
     "timestamp": "2026-06-20T02:51:54.693871+00:00"
+  },
+  {
+    "type": "new_product",
+    "direction": "NEW",
+    "title": "(NO SHRINK) Pokemon Mega Dream ex Booster Box M2a",
+    "variant": "Default Title",
+    "old_price": null,
+    "new_price": "145.99",
+    "diff": "145.99",
+    "pct": "N/A",
+    "url": "https://www.yumecards.ca/products/no-shrink-pokemon-mega-dream-ex-booster-box-m2a",
+    "timestamp": "2026-06-25T02:46:34.868249+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Nihil Zero Booster Box M3",
+    "variant": "Default Title",
+    "old_price": "94.99",
+    "new_price": "95.99",
+    "diff": "1.00",
+    "pct": "1.1",
+    "url": "https://www.yumecards.ca/products/pokemon-nihil-zero-booster-box-m3",
+    "timestamp": "2026-06-25T02:46:34.868249+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "UP",
+    "title": "Pokemon Battle Partners Booster Box sv9",
+    "variant": "Default Title",
+    "old_price": "109.99",
+    "new_price": "119.99",
+    "diff": "10.00",
+    "pct": "9.1",
+    "url": "https://www.yumecards.ca/products/pokemon-battle-partners-booster-box-sv9-pre-order",
+    "timestamp": "2026-06-25T02:46:34.868249+00:00"
   }
 ]
