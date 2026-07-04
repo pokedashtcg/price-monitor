@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Squawkabilly ex - 154/190 (154/190) [JP SV4a Shiny Treasure ex] Holofoil",
-    "variant": "Near Mint",
-    "old_price": "1.99",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/squawkabilly-ex-154-190-154-190-sv4a-shiny-treasure-ex-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Squawkabilly ex - 154/190 (154/190) [JP SV4a Shiny Treasure ex] Holofoil",
     "variant": "Lightly Played",
     "old_price": "1.59",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "6.3",
     "url": "https://www.yumecards.ca/products/pokemon-ninja-spinner-booster-box-m4",
     "timestamp": "2026-07-02T19:16:51.959556+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "DOWN",
+    "title": "Pokemon Abyss Eye Booster Box M5",
+    "variant": "Default Title",
+    "old_price": "129.99",
+    "new_price": "109.99",
+    "diff": "20.00",
+    "pct": "15.4",
+    "url": "https://www.yumecards.ca/products/pokemon-abyss-eye-booster-box-m5-preorder-ships-27th-1st",
+    "timestamp": "2026-07-04T02:27:00.925212+00:00"
   }
 ]
