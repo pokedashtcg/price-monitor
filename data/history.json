@@ -3,18 +3,6 @@
     "type": "removed",
     "direction": "REMOVED",
     "title": "Hoopa ex - 029/062 (029/062) [JP SV3a Raging Surf] Holofoil",
-    "variant": "Near Mint",
-    "old_price": "1.99",
-    "new_price": null,
-    "diff": "0",
-    "pct": "N/A",
-    "url": "https://www.yumecards.ca/products/hoopa-ex-029-062-029-062-sv3a-raging-surf-holofoil",
-    "timestamp": "2026-04-21T07:56:45.206611+00:00"
-  },
-  {
-    "type": "removed",
-    "direction": "REMOVED",
-    "title": "Hoopa ex - 029/062 (029/062) [JP SV3a Raging Surf] Holofoil",
     "variant": "Lightly Played",
     "old_price": "1.59",
     "new_price": null,
@@ -11998,5 +11986,17 @@
     "pct": "N/A",
     "url": "https://www.yumecards.ca/products/one-piece-jp-op-01-romance-dawn",
     "timestamp": "2026-07-06T19:48:58.578959+00:00"
+  },
+  {
+    "type": "price_change",
+    "direction": "DOWN",
+    "title": "One Piece Shueisha NatsuComi 2026 Promo",
+    "variant": "Default Title",
+    "old_price": "89.99",
+    "new_price": "69.99",
+    "diff": "20.00",
+    "pct": "22.2",
+    "url": "https://www.yumecards.ca/products/preorder-july-8-10th-one-piece-shueishas-natsucomi-2026-promo",
+    "timestamp": "2026-07-12T02:12:04.771240+00:00"
   }
 ]
